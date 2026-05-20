@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/deep_black"
+    android:padding="20dp">
+
+    <!-- Toolbar manual -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="24sp"
+            android:textColor="@color/neon_cyan"
+            android:padding="8dp"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="THEREMIN ESPACIAL"
+            android:textColor="@color/neon_cyan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.2"
+            android:gravity="center" />
+
+        <View android:layout_width="40dp" android:layout_height="1dp" />
+    </LinearLayout>
+
+    <!-- Visualizador de nota en tiempo real -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:strokeColor="@color/neon_cyan"
+        app:strokeWidth="1dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Nota musical grande -->
+            <TextView
+                android:id="@+id/tvNoteName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                android:textColor="@color/neon_cyan"
+                android:fontFamily="monospace" />
+
+            <!-- Frecuencia -->
+            <TextView
+                android:id="@+id/tvFrequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000.0 Hz"
+                android:textSize="20sp"
+                android:textColor="@color/neon_magenta"
+                android:fontFamily="monospace"
+                android:layout_marginTop="4dp" />
+
+            <!-- Octava -->
+            <TextView
+                android:id="@+id/tvOctave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OCT 4"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="monospace"
+                android:layout_marginTop="4dp" />
+
+            <!-- Barra de inclinación X -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PITCH (X)"
+                android:textSize="10sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="monospace"
+                android:layout_marginTop="20dp" />
+
+            <SeekBar
+                android:id="@+id/seekPitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                android:enabled="false"
+                android:layout_marginTop="4dp" />
+
+            <!-- Barra de inclinación Y (timbre) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIMBRE (Y)"
+                android:textSize="10sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="monospace"
+                android:layout_marginTop="12dp" />
+
+            <SeekBar
+                android:id="@+id/seekTimbre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                android:enabled="false"
+                android:layout_marginTop="4dp" />
+
+            <!-- Estado -->
+            <TextView
+                android:id="@+id/tvThereminStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INACTIVO — Pulsa ACTIVAR"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="monospace"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Info del archivo grabado -->
+    <TextView
+        android:id="@+id/tvRecordingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="11sp"
+        android:textColor="@color/neon_yellow"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botones fila 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnActivate"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="ACTIVAR"
+            style="@style/NeonButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRecord"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="⏺ GRABAR"
+            android:enabled="false"
+            style="@style/NeonButtonMagenta" />
+    </LinearLayout>
+
+    <!-- Botón reproducir -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPlayRecording"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="▶ REPRODUCIR GRABACIÓN"
+        android:enabled="false"
+        style="@style/NeonButtonGreen" />
+
+</LinearLayout>

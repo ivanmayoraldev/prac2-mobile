@@ -1,0 +1,41 @@
+<resources>
+    <style name="Theme.SonicLens" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/neon_cyan</item>
+        <item name="colorPrimaryVariant">@color/deep_black</item>
+        <item name="colorOnPrimary">@color/deep_black</item>
+        <item name="colorSecondary">@color/neon_magenta</item>
+        <item name="colorSecondaryVariant">@color/neon_magenta</item>
+        <item name="colorOnSecondary">@color/deep_black</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:colorBackground">@color/deep_black</item>
+        <item name="android:statusBarColor">@color/deep_black</item>
+        <item name="android:navigationBarColor">@color/deep_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="NeonButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/deep_black</item>
+        <item name="strokeColor">@color/neon_cyan</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/neon_cyan</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textSize">12sp</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+
+    <style name="NeonButtonMagenta" parent="NeonButton">
+        <item name="strokeColor">@color/neon_magenta</item>
+        <item name="android:textColor">@color/neon_magenta</item>
+    </style>
+
+    <style name="NeonButtonYellow" parent="NeonButton">
+        <item name="strokeColor">@color/neon_yellow</item>
+        <item name="android:textColor">@color/neon_yellow</item>
+    </style>
+
+    <style name="NeonButtonGreen" parent="NeonButton">
+        <item name="strokeColor">@color/neon_green</item>
+        <item name="android:textColor">@color/neon_green</item>
+    </style>
+</resources>

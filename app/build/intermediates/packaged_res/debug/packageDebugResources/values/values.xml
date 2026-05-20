@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="card_bg">#FF0D0D1A</color>
+    <color name="deep_black">#FF050510</color>
+    <color name="neon_cyan">#FF00E5FF</color>
+    <color name="neon_green">#FF76FF03</color>
+    <color name="neon_magenta">#FFFF00FF</color>
+    <color name="neon_yellow">#FFFFD600</color>
+    <color name="surface_bg">#FF111128</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FF9E9EBF</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">SonicLens</string>
+    <string name="app_tagline">Tu móvil es un instrumento</string>
+    <string name="btn_capture_glitch">CAPTURAR GLITCH</string>
+    <string name="btn_cycle_effect">🎨 CAMBIAR EFECTO</string>
+    <string name="btn_load_image">CARGAR IMAGEN</string>
+    <string name="btn_load_video">CARGAR VÍDEO</string>
+    <string name="btn_pause">⏸</string>
+    <string name="btn_pixelate">PIXELAR</string>
+    <string name="btn_play">▶</string>
+    <string name="btn_play_recording">▶ REPRODUCIR</string>
+    <string name="btn_retake">↩ REPETIR</string>
+    <string name="btn_save_glitch">💾 GUARDAR</string>
+    <string name="btn_save_result">💾 GUARDAR RESULTADO</string>
+    <string name="btn_start_playing">ACTIVAR THEREMIN</string>
+    <string name="btn_start_record">⏺ GRABAR</string>
+    <string name="btn_stop">⏹</string>
+    <string name="btn_stop_playing">DETENER</string>
+    <string name="btn_stop_record">⏹ DETENER REC</string>
+    <string name="btn_to_jpg">→ JPG</string>
+    <string name="btn_to_png">→ PNG</string>
+    <string name="cinema_title">🎬 CinemaVault</string>
+    <string name="converted_info">Convertido a %1$s · %2$dKB</string>
+    <string name="effect_chromatic">Aberración Cromática</string>
+    <string name="effect_glitch">Glitch</string>
+    <string name="effect_invert">Invertir</string>
+    <string name="effect_normal">Normal</string>
+    <string name="effect_scanlines">Scanlines</string>
+    <string name="glitch_title">📸 GlitchCam</string>
+    <string name="image_info">%1$s · %2$dx%3$d · %4$dKB</string>
+    <string name="module_cinema">CinemaVault</string>
+    <string name="module_cinema_desc">Reproductor de vídeo con visualizador de onda de audio</string>
+    <string name="module_glitch">GlitchCam</string>
+    <string name="module_glitch_desc">Toma fotos con efectos glitch en tiempo real y guárdalas</string>
+    <string name="module_pixel">PixelForge</string>
+    <string name="module_pixel_desc">Convierte imágenes entre formatos y aplica efectos de pixel art</string>
+    <string name="module_theremin">Theremin Espacial</string>
+    <string name="module_theremin_desc">Mueve el móvil para crear música con el acelerómetro y grábala</string>
+    <string name="no_image">Sin imagen cargada</string>
+    <string name="no_video">Sin vídeo cargado\nToca CARGAR VÍDEO</string>
+    <string name="perm_denied_audio">Permiso de micrófono denegado</string>
+    <string name="perm_denied_camera">Permiso de cámara denegado</string>
+    <string name="perm_denied_storage">Permiso de almacenamiento denegado</string>
+    <string name="photo_saved">Foto guardada en Galería</string>
+    <string name="pixel_title">🖼️ PixelForge</string>
+    <string name="recording_saved">Grabación guardada</string>
+    <string name="saved_ok">Guardado en Galería</string>
+    <string name="theremin_freq_label">Hz</string>
+    <string name="theremin_hint">Inclina el móvil para cambiar la nota\nAgita para cambiar el timbre</string>
+    <string name="theremin_note_label">NOTA</string>
+    <string name="theremin_tilt_label">INCLINACIÓN</string>
+    <string name="theremin_title">🎵 Theremin Espacial</string>
+    <string name="video_loaded">Vídeo listo</string>
+    <style name="NeonButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/deep_black</item>
+        <item name="strokeColor">@color/neon_cyan</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/neon_cyan</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textSize">12sp</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+    <style name="NeonButtonGreen" parent="NeonButton">
+        <item name="strokeColor">@color/neon_green</item>
+        <item name="android:textColor">@color/neon_green</item>
+    </style>
+    <style name="NeonButtonMagenta" parent="NeonButton">
+        <item name="strokeColor">@color/neon_magenta</item>
+        <item name="android:textColor">@color/neon_magenta</item>
+    </style>
+    <style name="NeonButtonYellow" parent="NeonButton">
+        <item name="strokeColor">@color/neon_yellow</item>
+        <item name="android:textColor">@color/neon_yellow</item>
+    </style>
+    <style name="Theme.SonicLens" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/neon_cyan</item>
+        <item name="colorPrimaryVariant">@color/deep_black</item>
+        <item name="colorOnPrimary">@color/deep_black</item>
+        <item name="colorSecondary">@color/neon_magenta</item>
+        <item name="colorSecondaryVariant">@color/neon_magenta</item>
+        <item name="colorOnSecondary">@color/deep_black</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:colorBackground">@color/deep_black</item>
+        <item name="android:statusBarColor">@color/deep_black</item>
+        <item name="android:navigationBarColor">@color/deep_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

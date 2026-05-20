@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="neon_cyan">#FF00E5FF</color>
+    <color name="neon_magenta">#FFFF00FF</color>
+    <color name="neon_yellow">#FFFFD600</color>
+    <color name="neon_green">#FF76FF03</color>
+    <color name="deep_black">#FF050510</color>
+    <color name="card_bg">#FF0D0D1A</color>
+    <color name="surface_bg">#FF111128</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FF9E9EBF</color>
+</resources>

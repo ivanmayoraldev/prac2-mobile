@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.soniclens.app-mergeDebugResources-3:/layout/activity_cinema_vault.xml",
+        "source": "com.example.soniclens.app-main-6:/layout/activity_cinema_vault.xml"
+    },
+    {
+        "merged": "com.example.soniclens.app-mergeDebugResources-3:/layout/activity_theremin.xml",
+        "source": "com.example.soniclens.app-main-6:/layout/activity_theremin.xml"
+    },
+    {
+        "merged": "com.example.soniclens.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.example.soniclens.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.soniclens.app-mergeDebugResources-3:/layout/activity_pixel_forge.xml",
+        "source": "com.example.soniclens.app-main-6:/layout/activity_pixel_forge.xml"
+    },
+    {
+        "merged": "com.example.soniclens.app-mergeDebugResources-3:/layout/activity_glitch_cam.xml",
+        "source": "com.example.soniclens.app-main-6:/layout/activity_glitch_cam.xml"
+    }
+]

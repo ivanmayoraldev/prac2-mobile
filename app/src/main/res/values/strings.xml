@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">SonicLens</string>
+    <string name="app_tagline">Tu móvil es un instrumento</string>
+
+    <!-- Main -->
+    <string name="module_theremin">Theremin Espacial</string>
+    <string name="module_theremin_desc">Mueve el móvil para crear música con el acelerómetro y grábala</string>
+    <string name="module_glitch">GlitchCam</string>
+    <string name="module_glitch_desc">Toma fotos con efectos glitch en tiempo real y guárdalas</string>
+    <string name="module_pixel">PixelForge</string>
+    <string name="module_pixel_desc">Convierte imágenes entre formatos y aplica efectos de pixel art</string>
+    <string name="module_cinema">CinemaVault</string>
+    <string name="module_cinema_desc">Reproductor de vídeo con visualizador de onda de audio</string>
+
+    <!-- Theremin -->
+    <string name="theremin_title">🎵 Theremin Espacial</string>
+    <string name="btn_start_playing">ACTIVAR THEREMIN</string>
+    <string name="btn_stop_playing">DETENER</string>
+    <string name="btn_start_record">⏺ GRABAR</string>
+    <string name="btn_stop_record">⏹ DETENER REC</string>
+    <string name="btn_play_recording">▶ REPRODUCIR</string>
+    <string name="theremin_hint">Inclina el móvil para cambiar la nota\nAgita para cambiar el timbre</string>
+    <string name="theremin_note_label">NOTA</string>
+    <string name="theremin_freq_label">Hz</string>
+    <string name="theremin_tilt_label">INCLINACIÓN</string>
+    <string name="recording_saved">Grabación guardada</string>
+
+    <!-- GlitchCam -->
+    <string name="glitch_title">📸 GlitchCam</string>
+    <string name="btn_capture_glitch">CAPTURAR GLITCH</string>
+    <string name="btn_save_glitch">💾 GUARDAR</string>
+    <string name="btn_retake">↩ REPETIR</string>
+    <string name="btn_cycle_effect">🎨 CAMBIAR EFECTO</string>
+    <string name="effect_normal">Normal</string>
+    <string name="effect_glitch">Glitch</string>
+    <string name="effect_scanlines">Scanlines</string>
+    <string name="effect_chromatic">Aberración Cromática</string>
+    <string name="effect_invert">Invertir</string>
+    <string name="photo_saved">Foto guardada en Galería</string>
+
+    <!-- PixelForge -->
+    <string name="pixel_title">🖼️ PixelForge</string>
+    <string name="btn_load_image">CARGAR IMAGEN</string>
+    <string name="btn_to_jpg">→ JPG</string>
+    <string name="btn_to_png">→ PNG</string>
+    <string name="btn_pixelate">PIXELAR</string>
+    <string name="btn_save_result">💾 GUARDAR RESULTADO</string>
+    <string name="no_image">Sin imagen cargada</string>
+    <string name="image_info">%1$s · %2$dx%3$d · %4$dKB</string>
+    <string name="converted_info">Convertido a %1$s · %2$dKB</string>
+    <string name="saved_ok">Guardado en Galería</string>
+
+    <!-- CinemaVault -->
+    <string name="cinema_title">🎬 CinemaVault</string>
+    <string name="btn_load_video">CARGAR VÍDEO</string>
+    <string name="btn_play">▶</string>
+    <string name="btn_pause">⏸</string>
+    <string name="btn_stop">⏹</string>
+    <string name="no_video">Sin vídeo cargado\nToca CARGAR VÍDEO</string>
+    <string name="video_loaded">Vídeo listo</string>
+
+    <!-- Permissions -->
+    <string name="perm_denied_audio">Permiso de micrófono denegado</string>
+    <string name="perm_denied_camera">Permiso de cámara denegado</string>
+    <string name="perm_denied_storage">Permiso de almacenamiento denegado</string>
+</resources>

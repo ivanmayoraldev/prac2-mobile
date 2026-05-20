@@ -1,0 +1,223 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.soniclens"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:4:5-71
+11-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:4:22-68
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:5:5-65
+12-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:5:22-62
+13    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+13-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:6:5-76
+13-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:6:22-73
+14    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+14-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:7:5-75
+14-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:7:22-72
+15    <uses-permission
+15-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:8:5-9:38
+16        android:name="android.permission.READ_EXTERNAL_STORAGE"
+16-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:8:22-77
+17        android:maxSdkVersion="32" />
+17-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:9:9-35
+18
+19    <uses-feature
+19-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:11:5-85
+20        android:name="android.hardware.camera"
+20-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:11:19-57
+21        android:required="false" />
+21-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:11:58-82
+22    <uses-feature
+22-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:12:5-89
+23        android:name="android.hardware.microphone"
+23-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:12:19-61
+24        android:required="false" />
+24-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:12:62-86
+25    <uses-feature
+25-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:13:5-99
+26        android:name="android.hardware.sensor.accelerometer"
+26-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:13:19-71
+27        android:required="false" />
+27-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:13:72-96
+28
+29    <permission
+29-->[androidx.core:core:1.13.1] C:\Users\Iván\.gradle\caches\transforms-3\afb1499f0f8993135953ad4086c55503\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+30        android:name="com.example.soniclens.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.13.1] C:\Users\Iván\.gradle\caches\transforms-3\afb1499f0f8993135953ad4086c55503\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.13.1] C:\Users\Iván\.gradle\caches\transforms-3\afb1499f0f8993135953ad4086c55503\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.example.soniclens.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.13.1] C:\Users\Iván\.gradle\caches\transforms-3\afb1499f0f8993135953ad4086c55503\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.13.1] C:\Users\Iván\.gradle\caches\transforms-3\afb1499f0f8993135953ad4086c55503\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:15:5-56:19
+36        android:allowBackup="true"
+36-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:16:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.13.1] C:\Users\Iván\.gradle\caches\transforms-3\afb1499f0f8993135953ad4086c55503\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+40        android:icon="@android:drawable/sym_def_app_icon"
+40-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:17:9-58
+41        android:label="@string/app_name"
+41-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:19:9-41
+42        android:roundIcon="@android:drawable/sym_def_app_icon"
+42-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:18:9-63
+43        android:supportsRtl="true"
+43-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:20:9-35
+44        android:testOnly="true"
+45        android:theme="@style/Theme.SonicLens" >
+45-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:21:9-47
+46        <activity
+46-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:23:9-31:20
+47            android:name="com.example.soniclens.MainActivity"
+47-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:24:13-41
+48            android:exported="true"
+48-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:25:13-36
+49            android:screenOrientation="portrait" >
+49-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:26:13-49
+50            <intent-filter>
+50-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:27:13-30:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:28:17-69
+51-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:28:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:29:17-77
+53-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:29:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:33:9-35:52
+57            android:name="com.example.soniclens.ui.audio.ThereminActivity"
+57-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:34:13-54
+58            android:screenOrientation="portrait" />
+58-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:35:13-49
+59        <activity
+59-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:36:9-38:52
+60            android:name="com.example.soniclens.ui.camera.GlitchCamActivity"
+60-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:37:13-56
+61            android:screenOrientation="portrait" />
+61-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:38:13-49
+62        <activity
+62-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:39:9-41:52
+63            android:name="com.example.soniclens.ui.image.PixelForgeActivity"
+63-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:40:13-56
+64            android:screenOrientation="portrait" />
+64-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:41:13-49
+65        <activity
+65-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:42:9-44:52
+66            android:name="com.example.soniclens.ui.video.CinemaVaultActivity"
+66-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:43:13-57
+67            android:screenOrientation="portrait" />
+67-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:44:13-49
+68
+69        <provider
+70            android:name="androidx.core.content.FileProvider"
+70-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:47:13-62
+71            android:authorities="com.example.soniclens.fileprovider"
+71-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:48:13-64
+72            android:exported="false"
+72-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:49:13-37
+73            android:grantUriPermissions="true" >
+73-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:50:13-47
+74            <meta-data
+74-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:51:13-53:54
+75                android:name="android.support.FILE_PROVIDER_PATHS"
+75-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:52:17-67
+76                android:resource="@xml/file_paths" />
+76-->C:\Projects\SonicLens\app\src\main\AndroidManifest.xml:53:17-51
+77        </provider>
+78
+79        <service
+79-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Iván\.gradle\caches\transforms-3\ec2c9f79e1678f62af448d5a21ce5594\transformed\camera-camera2-1.3.3\AndroidManifest.xml:24:9-33:19
+80            android:name="androidx.camera.core.impl.MetadataHolderService"
+80-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Iván\.gradle\caches\transforms-3\ec2c9f79e1678f62af448d5a21ce5594\transformed\camera-camera2-1.3.3\AndroidManifest.xml:25:13-75
+81            android:enabled="false"
+81-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Iván\.gradle\caches\transforms-3\ec2c9f79e1678f62af448d5a21ce5594\transformed\camera-camera2-1.3.3\AndroidManifest.xml:26:13-36
+82            android:exported="false" >
+82-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Iván\.gradle\caches\transforms-3\ec2c9f79e1678f62af448d5a21ce5594\transformed\camera-camera2-1.3.3\AndroidManifest.xml:27:13-37
+83            <meta-data
+83-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Iván\.gradle\caches\transforms-3\ec2c9f79e1678f62af448d5a21ce5594\transformed\camera-camera2-1.3.3\AndroidManifest.xml:30:13-32:89
+84                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+84-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Iván\.gradle\caches\transforms-3\ec2c9f79e1678f62af448d5a21ce5594\transformed\camera-camera2-1.3.3\AndroidManifest.xml:31:17-103
+85                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+85-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Iván\.gradle\caches\transforms-3\ec2c9f79e1678f62af448d5a21ce5594\transformed\camera-camera2-1.3.3\AndroidManifest.xml:32:17-86
+86        </service>
+87
+88        <provider
+88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Iván\.gradle\caches\transforms-3\8e8bdded983323cc5db58565efef072a\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+89            android:name="androidx.startup.InitializationProvider"
+89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Iván\.gradle\caches\transforms-3\8e8bdded983323cc5db58565efef072a\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+90            android:authorities="com.example.soniclens.androidx-startup"
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Iván\.gradle\caches\transforms-3\8e8bdded983323cc5db58565efef072a\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+91            android:exported="false" >
+91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Iván\.gradle\caches\transforms-3\8e8bdded983323cc5db58565efef072a\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+92            <meta-data
+92-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Iván\.gradle\caches\transforms-3\8e8bdded983323cc5db58565efef072a\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+93-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Iván\.gradle\caches\transforms-3\8e8bdded983323cc5db58565efef072a\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+94                android:value="androidx.startup" />
+94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Iván\.gradle\caches\transforms-3\8e8bdded983323cc5db58565efef072a\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Iván\.gradle\caches\transforms-3\d5982d26ca367ce38ad8bd11c025af48\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+96-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Iván\.gradle\caches\transforms-3\d5982d26ca367ce38ad8bd11c025af48\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:30:17-78
+97                android:value="androidx.startup" />
+97-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Iván\.gradle\caches\transforms-3\d5982d26ca367ce38ad8bd11c025af48\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:31:17-49
+98            <meta-data
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+99                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+100                android:value="androidx.startup" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+101        </provider>
+102
+103        <receiver
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+104            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+105            android:directBootAware="false"
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+106            android:enabled="true"
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+107            android:exported="true"
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+108            android:permission="android.permission.DUMP" >
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+110                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+113                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+114            </intent-filter>
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+116                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+117            </intent-filter>
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+119                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Iván\.gradle\caches\transforms-3\236ec60e845187929c0860022c9317ff\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+120            </intent-filter>
+121        </receiver>
+122    </application>
+123
+124</manifest>
