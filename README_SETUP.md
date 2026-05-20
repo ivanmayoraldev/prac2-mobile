@@ -1,10 +1,10 @@
-# 🎵 SonicLens — Multimedia Android App
+# SonicLens — Multimedia Android App
 
 > Una aplicación multimedia con identidad propia: estética cyberpunk, un theremin con el acelerómetro, cámara con efectos glitch, conversión de imágenes con pixel art, y reproductor de vídeo.
 
 ---
 
-## ⚡ Setup rápido en Android Studio
+## Setup rápido en Android Studio
 
 ### Paso 1 — Crear proyecto base
 
@@ -17,7 +17,7 @@
 | Min SDK | API 26 (Android 8.0) |
 | Build config | **Kotlin DSL** (`.kts`) |
 
-> ⚠️ Importante: en "Build configuration language" elige **Kotlin DSL**, no Groovy.
+> Importante: en "Build configuration language" elige **Kotlin DSL**, no Groovy.
 
 ### Paso 2 — Reemplazar archivos
 
@@ -58,7 +58,7 @@ Run → Run 'app'
 
 ## 📱 Los 4 módulos
 
-### 01 · THEREMIN ESPACIAL 🎵
+### 01 · THEREMIN ESPACIAL 
 El módulo de grabación de audio más original posible.
 
 - **Acelerómetro → música**: inclina el móvil izquierda/derecha para cambiar el pitch (110–880 Hz, escala cromática). Inclina adelante/atrás para cambiar el volumen.
@@ -67,7 +67,7 @@ El módulo de grabación de audio más original posible.
 - **Reproducción** del archivo `.m4a` grabado.
 - Muestra la nota musical, frecuencia en Hz, octava, y barras de pitch/timbre en tiempo real.
 
-### 02 · GLITCHCAM 📸
+### 02 · GLITCHCAM 
 La cámara con alma de artista glitch.
 
 - Preview en vivo con **CameraX**.
@@ -81,7 +81,7 @@ La cámara con alma de artista glitch.
 - Guarda en Galería (`Pictures/SonicLens/`) en JPEG con el nombre del efecto.
 - Puedes cambiar el efecto y re-aplicarlo a la misma foto sin volver a capturar.
 
-### 03 · PIXELFORGE 🖼️
+### 03 · PIXELFORGE 
 Procesamiento de imagen con alma retro.
 
 - Carga cualquier imagen con `ActivityResultContracts.GetContent()`.
@@ -90,7 +90,7 @@ Procesamiento de imagen con alma retro.
 - Muestra formato, resolución y tamaño del resultado antes de guardar.
 - Guarda en Galería.
 
-### 04 · CINEMAVAULT 🎬
+### 04 · CINEMAVAULT 
 Reproductor de vídeo profesional.
 
 - Carga vídeos con selector del sistema.
@@ -98,11 +98,11 @@ Reproductor de vídeo profesional.
 - SeekBar sincronizada con el progreso (actualización cada 250ms).
 - Muestra tiempo actual / duración total.
 - Extrae metadatos: resolución, título, con `MediaMetadataRetriever`.
-- Controles ▶ / ⏸ / ⏹ con indicadores visuales en el título.
+- Controles con indicadores visuales en el título.
 
 ---
 
-## 🛠️ Stack técnico
+## Stack técnico
 
 | Componente | Tecnología |
 |---|---|
@@ -122,7 +122,7 @@ Reproductor de vídeo profesional.
 
 ---
 
-## 🔑 Permisos
+## Permisos
 
 | Permiso | Módulo |
 |---|---|
@@ -131,11 +131,3 @@ Reproductor de vídeo profesional.
 | `READ_MEDIA_IMAGES` (API 33+) | PixelForge |
 | `READ_MEDIA_VIDEO` (API 33+) | CinemaVault |
 | `READ_EXTERNAL_STORAGE` (API ≤ 32) | PixelForge / CinemaVault |
-
----
-
-## ⚠️ Notas
-
-- **JDK 21 (Temurin)** + **Java 17 target** → compatibilidad perfecta (JDK 21 soporta bytecode hasta Java 21, pero el target 17 asegura compatibilidad con todas las versiones Android modernas).
-- El theremin graba desde el **micrófono**, no el AudioTrack directamente — esto es una limitación de Android (no se puede capturar el playback interno sin root). El resultado es el ambiente + el sonido del altavoz.
-- Para el efecto Glitch, cada captura genera resultados distintos (semilla `System.currentTimeMillis()`).
